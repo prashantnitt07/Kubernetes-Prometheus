@@ -24,7 +24,7 @@ jobs:
           mkdir -p $HOME/.kube
           echo "${{ secrets.KUBECONFIG }}" | base64 -d > $HOME/.kube/config
 
-      # Step 4: Terraform Init
+      # Step 4: Terraform Init-this
       - name: Terraform Init
         run: terraform init
 
